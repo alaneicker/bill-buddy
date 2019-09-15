@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { submitLogin } from './login.actions';
 
@@ -13,7 +14,7 @@ export const Login = (props) => {
         <img src="/assets/images/wallet.svg" alt="image of a wallet" />
         <h1>Bill Buddy</h1>
         <h2 className="margin-bottom-32">Account Login</h2>
-        <form noValidate>
+        <form className="margin-bottom-24" noValidate>
           <div className="margin-bottom-16">
             <label className="label label--uppercase">Username</label>
             <input className="text-input" name="username" />
@@ -24,6 +25,7 @@ export const Login = (props) => {
           </div>
           <button className="btn btn--block btn--secondary">Login</button>
         </form>
+        <p>Dont have an account? <Link className="link link--light" to="/create-account">Create a new account</Link></p>
       </div>
     </div>
   );

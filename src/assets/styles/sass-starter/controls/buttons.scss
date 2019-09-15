@@ -4,13 +4,12 @@
   background: $white;
   color: $blue-400;
   cursor: pointer;
-  display: inline-block;
+  display: inline-flex;
   font-family: inherit;
   font-weight: 600;
   font-size: rem($root-font-size);
-  min-height: rem($input-height);
   outline: 0;
-  padding: rem(8 24);
+  padding: rem(12 24);
   text-transform: uppercase;
   transition: background .3s linear;
   text-decoration: none;

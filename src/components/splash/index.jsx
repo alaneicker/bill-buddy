@@ -9,8 +9,8 @@ export const Splash = (props) => {
         <h1>Bill Buddy</h1>
         <h2 className="margin-bottom-32">Bill and Expense Tracking Made Easy.</h2>
         <ul className="h-list h-list--hr-8">
-          <li><Link to="/create-account" className="btn btn--primary">Create Account</Link></li>
-          <li><Link to="/login" className="btn btn--secondary">Log In</Link></li>
+          <li><Link to="/create-account" className="btn btn--primary"><span>Create Account</span></Link></li>
+          <li><Link to="/login" className="btn btn--secondary"><span>Log In</span></Link></li>
         </ul>
       </div>
     </div>
