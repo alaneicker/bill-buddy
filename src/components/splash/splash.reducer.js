@@ -2,7 +2,7 @@ import { UPDATE_SPLASH_CONTENT } from './splash.actions';
 
 const initialState = {
   splashTitle: 'Bill Buddy',
-  splashSubtitle: 'A React App for Tracking Bills and Expenses.',
+  splashSubtitle: 'Bill and Expense Tracking Made Easy.',
 };
 
 const splashReducer = (state = initialState, { type, payload }) => {
