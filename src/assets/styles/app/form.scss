@@ -1,0 +1,16 @@
+form {
+
+  input ~ .hint--error,
+  textarea ~ .hint--error,
+  select ~ .hint--error {
+    display: none;
+  }
+
+  &.is-submitted {
+    input:invalid ~ .hint--error,
+    textarea:invalid ~ .hint--error,
+    select:invalid ~ .hint--error {
+      display: block;
+    }
+  }
+}

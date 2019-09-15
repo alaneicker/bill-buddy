@@ -1,0 +1,13 @@
+.flash-message {
+  padding: rem(8);
+
+  &--error {
+    background: $red-100;
+    color: $white;
+  }
+
+  &--success {
+    background: $green-100;
+    color: $white;
+  }
+}
