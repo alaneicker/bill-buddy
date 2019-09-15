@@ -1,8 +1,8 @@
 import { UPDATE_SPLASH_CONTENT } from './splash.actions';
 
 const initialState = {
-  splashTitle: 'React Boilerplate',
-  splashSubtitle: 'A simple React starter to accelerate you application development.',
+  splashTitle: 'Bill Buddy',
+  splashSubtitle: 'A React App for Tracking Bills and Expenses.',
 };
 
 const splashReducer = (state = initialState, { type, payload }) => {

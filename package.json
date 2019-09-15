@@ -1,7 +1,7 @@
 {
-  "name": "react-boilerplate",
+  "name": "bill-buddy",
   "version": "1.0.0",
-  "description": "A React Boilerplate",
+  "description": "A React App for Tracking Bills and Expenses",
   "scripts": {
     "start": "NODE_ENV=production node dist/server/index.js",
     "start:ssr-dev": "BABEL_ENV=node NODE_ENV=development nodemon --exec babel-node server",
@@ -12,11 +12,11 @@
     "test": "jest --watchAll --coverage --config=./jestConfigs/jest.config.js",
     "lint": "eslint 'src/**/*.js' --ignore-pattern '*.test.js'"
   },
-  "repository": "https://github.com/alaneicker/react-boilerplate",
+  "repository": "https://github.com/alaneicker/bill-buddy",
   "author": "Alan Eicker",
   "license": "MIT",
   "dependencies": {
-    "axois": "^1.0.0",
+    "axios": "^0.19.0",
     "classnames": "^2.2.6",
     "core-js": "^3.2.1",
     "express": "^4.17.1",

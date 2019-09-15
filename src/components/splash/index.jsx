@@ -9,9 +9,10 @@ export const Splash = (props) => {
   return (
     <div className="splash-page">
       <div className="splash-page__content">
-        <img src="/assets/images/launch.svg" alt="image of a rocket" />
+        <img src="/assets/images/wallet.svg" alt="image of a wallet" />
         <h1>{splashTitle}</h1>
-        <h2>{splashSubtitle}</h2>
+        <h2 className="margin-bottom-32">{splashSubtitle}</h2>
+        <button type="button" className="btn btn--secondary">Get Started</button>
       </div>
     </div>
   );
