@@ -8,7 +8,7 @@
   }
 
   @each $increment in $list-spacing {
-    &--spacing-#{$increment} > * + * {
+    &--hr-#{$increment} > * + * {
       margin-left: rem($increment);
     }
   }

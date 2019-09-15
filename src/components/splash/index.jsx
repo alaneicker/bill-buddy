@@ -12,7 +12,10 @@ export const Splash = (props) => {
         <img src="/assets/images/wallet.svg" alt="image of a wallet" />
         <h1>{splashTitle}</h1>
         <h2 className="margin-bottom-32">{splashSubtitle}</h2>
-        <button type="button" className="btn btn--secondary">Get Started</button>
+        <ul className="h-list h-list--hr-8">
+          <li><button type="button" className="btn btn--primary">Create Account</button></li>
+          <li><button type="button" className="btn btn--secondary">Log In</button></li>
+        </ul>
       </div>
     </div>
   );

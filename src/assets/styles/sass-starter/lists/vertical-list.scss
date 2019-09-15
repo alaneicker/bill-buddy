@@ -4,7 +4,7 @@
   }
   
   @each $increment in $list-spacing {
-    &--spacing-#{$increment} > * + * {
+    &--vr-#{$increment} > * + * {
       margin-top: rem($increment);
     }
   }
