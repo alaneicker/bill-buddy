@@ -24,7 +24,7 @@ export const Login = (props) => {
         <img src="/assets/images/wallet.svg" alt="image of a wallet" />
         <h1>Bill Buddy</h1>
         <h2 className="margin-bottom-24">Account Login</h2>
-        <form className={`margin-bottom-24 ${submitted ? 'is-submitted' : ''}`} noValidate>
+        <form autoComplete="off" className={`margin-bottom-24 ${submitted ? 'is-submitted' : ''}`} noValidate>
           {invalidLogin
             ? <div className="margin-bottom-16">
                 <div className="flash-message flash-message--error">Username or Password is Invalid</div>
