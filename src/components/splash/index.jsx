@@ -1,17 +1,13 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import { updateSplash } from './splash.actions';
 import './splash.scss';
 
 export const Splash = (props) => {
-  const { splashTitle, splashSubtitle } = props;
-
   return (
     <div className="splash-page">
       <div className="splash-page__content">
         <img src="/assets/images/wallet.svg" alt="image of a wallet" />
-        <h1>{splashTitle}</h1>
-        <h2 className="margin-bottom-32">{splashSubtitle}</h2>
+        <h1>Bill Buddy</h1>
+        <h2 className="margin-bottom-32">Bill and Expense Tracking Made Easy.</h2>
         <ul className="h-list h-list--hr-8">
           <li><button type="button" className="btn btn--primary">Create Account</button></li>
           <li><button type="button" className="btn btn--secondary">Log In</button></li>
@@ -21,21 +17,4 @@ export const Splash = (props) => {
   );
 };
 
-const mapStateToProps = ({ splashReducer }) => {
-  const { splashTitle, splashSubtitle } = splashReducer;
-
-  return {
-    splashTitle,
-    splashSubtitle,
-  };
-};
-
-const mapDispatchToProps = (dispatch) => {
-  return {
-    onUpdateSplash(payload) {
-      dispatch(updateSplash(payload));
-    },
-  };
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(Splash);
+export default Splash;

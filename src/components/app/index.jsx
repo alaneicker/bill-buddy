@@ -4,10 +4,10 @@ import { Provider } from 'react-redux';
 import { Route } from 'react-router-dom';
 import Splash from '../splash';
 
-import splashReducer from '../splash/splash.reducer';
+import loginReducer from '../login/login.reducer';
 
 const store = createStore(combineReducers({
-  splashReducer,
+  loginReducer,
 }));
 
 const App = () => {
