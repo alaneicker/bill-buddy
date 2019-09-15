@@ -13,9 +13,11 @@
   padding: rem(8 24);
   text-transform: uppercase;
   transition: background .3s linear;
+  text-decoration: none;
   
   &:hover {
     background: $blue-000;
+    color: inherit;
   }
   
   &:focus,

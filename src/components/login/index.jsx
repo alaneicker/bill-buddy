@@ -1,16 +1,30 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { submitLogin } from './login.actions';
-import './login.scss';
 
 export const Login = (props) => {
-  handleKeyPress = e => {
+  const handleKeyPress = e => {
     const input = e.target.name;
     const value = e.target.value;
   }
   return (
-    <div className="login-page">
-     
+    <div className="pre-login-layout">
+      <div className="pre-login-layout__content">
+        <img src="/assets/images/wallet.svg" alt="image of a wallet" />
+        <h1>Bill Buddy</h1>
+        <h2 className="margin-bottom-32">Account Login</h2>
+        <form noValidate>
+          <div className="margin-bottom-16">
+            <label className="label label--uppercase">Username</label>
+            <input className="text-input" name="username" />
+          </div>
+          <div className="margin-bottom-24">
+            <label className="label label--uppercase">Password</label>
+            <input className="text-input" name="username" />
+          </div>
+          <button className="btn btn--block btn--secondary">Login</button>
+        </form>
+      </div>
     </div>
   );
 };

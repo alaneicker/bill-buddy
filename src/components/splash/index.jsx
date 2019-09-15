@@ -1,16 +1,16 @@
 import React from 'react';
-import './splash.scss';
+import { Link } from 'react-router-dom';
 
 export const Splash = (props) => {
   return (
-    <div className="splash-page">
-      <div className="splash-page__content">
+    <div className="pre-login-layout">
+      <div className="pre-login-layout__content">
         <img src="/assets/images/wallet.svg" alt="image of a wallet" />
         <h1>Bill Buddy</h1>
         <h2 className="margin-bottom-32">Bill and Expense Tracking Made Easy.</h2>
         <ul className="h-list h-list--hr-8">
-          <li><button type="button" className="btn btn--primary">Create Account</button></li>
-          <li><button type="button" className="btn btn--secondary">Log In</button></li>
+          <li><Link to="/create-account" className="btn btn--primary">Create Account</Link></li>
+          <li><Link to="/login" className="btn btn--secondary">Log In</Link></li>
         </ul>
       </div>
     </div>
