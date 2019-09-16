@@ -1,13 +1,13 @@
 .flash-message {
+  background-color: $blue-200;
+  color: $white;
   padding: rem(8);
 
   &--error {
-    background: $red-100;
-    color: $white;
+    background-color: $red-100;
   }
 
   &--success {
-    background: $green-100;
-    color: $white;
+    background-color: $green-100;
   }
 }
