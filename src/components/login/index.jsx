@@ -32,11 +32,13 @@ export const Login = (props) => {
             : null}
           <div className="margin-bottom-16">
             <label className="label label--uppercase">Username</label>
+            <div className="margin-bottom-4"></div>
             <input className="text-input" name="username" required />
             <div className="hint hint--error">Please enter your username</div>
           </div>
           <div className="margin-bottom-24">
             <label className="label label--uppercase">Password</label>
+            <div className="margin-bottom-4"></div>
             <input className="text-input" name="username" required />
             <div className="hint hint--error">Please enter your password</div>
           </div>
