@@ -42,8 +42,8 @@ export const Login = (props) => {
           </div>
           <button type="button" className="btn btn--block btn--secondary" onClick={handleSubmit}>Login</button>
         </form>
-        <p><Link className="link link--light" to="/reset-password">Forgot your password?</Link></p>
-        <p>Dont have an account? <Link className="link link--light" to="/create-account">Create a new account</Link></p>
+        <p><Link className="link-light" to="/reset-password">Forgot your password?</Link></p>
+        <p>Dont have an account? <Link className="link-light" to="/create-account">Create a new account</Link></p>
       </div>
     </div>
   );

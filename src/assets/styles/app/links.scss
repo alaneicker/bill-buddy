@@ -1,10 +1,7 @@
-.link {
+.link-light {
+  color: $blue-100;
 
-  &--light {
-    color: $blue-100;
-
-    &:hover {
-      color: $white;
-    }
+  &:hover {
+    color: $white;
   }
 }
