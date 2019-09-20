@@ -24,6 +24,7 @@ app.get('/*', (req, res) => {
   );
 
   const indexFile = path.resolve(indexPath);
+  
   fs.readFile(indexFile, 'utf8', (err, data) => {
     if (err) {
       console.error('Something went wrong:', err);
