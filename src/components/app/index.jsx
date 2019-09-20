@@ -1,7 +1,7 @@
 import React from 'react';
+import { Route, Switch } from 'react-router-dom';
 import { createStore, combineReducers } from 'redux';
 import { Provider } from 'react-redux';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Splash from '../splash';
 import Login from '../login';
 
@@ -14,10 +14,10 @@ const store = createStore(combineReducers({
 const App = () => {
   return (
     <Provider store={store}>
-      <Router>
+      <Switch>
         <Route path="/" exact component={Splash} />
         <Route path="/login" component={Login} />
-      </Router>
+      </Switch>
     </Provider>
   );
 };
