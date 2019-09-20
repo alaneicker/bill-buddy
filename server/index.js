@@ -16,7 +16,7 @@ const app = express();
 
 app.use(express.static(staticPath));
 
-app.get('/*', (req, res) => { // '^/$'
+app.get('/*', (req, res) => {
   const app = ReactDOMServer.renderToString(
     <StaticRouter location={req.url} context={{}}>
       <App />
