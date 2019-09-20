@@ -36,9 +36,7 @@ const serverRenderer = (req, res) => {
   });
 };
 
-app.use(
-  express.static(staticPath, { maxAge: '30d' })
-);
+app.use(express.static(staticPath, { maxAge: '30d' }));
 
 app.get('*', serverRenderer);
 
