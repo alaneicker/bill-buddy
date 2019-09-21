@@ -7,4 +7,25 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 rem(16);
+
+  &__nav {
+    display: flex;
+
+    & > * + * {
+      margin-left: rem(24);
+    }
+
+    & > * > a {
+      color: $white;
+      font-weight: $font-bold;
+      font-size: rem(14);
+      text-decoration: none;
+      text-transform: uppercase;
+
+      &:hover {
+        color: $white;
+        text-decoration: underline;
+      }
+    }
+  }
 }
