@@ -8,6 +8,7 @@ export const Splash = (props) => {
       <Header />
       <div className="pre-login-layout">
         <div className="pre-login-layout__content">
+          <img className="margin-bottom-16" src="/assets/images/bills.svg" alt="image of a wallet" width="150" />
           <h1>Organize Your Finances with Bill Buddy</h1>
           <h2 className="margin-bottom-32">Bill and Expense Tracking Made Easy.</h2>
           <ul className="h-list h-list--hr-8">
