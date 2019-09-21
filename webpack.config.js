@@ -48,6 +48,10 @@ const config = {
         exclude: /[\\/]node_modules[\\/]/,
         use: ['babel-loader'],
       },
+      { 
+        test: /\.svg$/, 
+        loader: 'raw-loader' 
+       }, 
       {
         test: /\.(s?css|sass)$/,
         exclude: /[\\/]node_modules[\\/]/,

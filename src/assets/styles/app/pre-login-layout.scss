@@ -1,21 +1,18 @@
 .pre-login-layout {
   background: $blue-500;
   display: flex;
-  height: 100vh;
+  height: calc(100vh - 60px);
   align-items: center;
   justify-content: center;
 
   &__content {
-    // background: lighten($blue-500, 4%);
-    // border: rem(1) solid rgba(255,255,255,0.15);
-    // padding: rem(16);
     max-width: $site-width;
     color: $white;
     text-align: center;
 
     h1 {
-      font-size: rem(50);
-      font-weight: $font-extra-bold;
+      font-size: rem(40);
+      font-weight: $font-bold;
       line-height: 1.2;
     }
 
@@ -24,12 +21,7 @@
       line-height: 1.5;
       margin-top: rem(8);
     }
-
-    img {
-      width: rem(100);
-      margin-bottom: rem(8);
-    }
-
+    
     .text-input {
       border: 0;
     }

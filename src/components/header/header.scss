@@ -1,0 +1,10 @@
+@import '../../assets/styles/tools.scss';
+
+.header {
+  background: lighten($blue-500, 5%);
+  height: rem(60);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 rem(16);
+}
