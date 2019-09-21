@@ -8,9 +8,9 @@ const Header = (props) => {
     <header className="header">
       <Logo size="36" imgUrl="/assets/images/wallet.svg" text="Bill Buddy" />
       <ul className="header__nav">
-        <li><Link to="/login">My Account</Link></li>
-        <li><Link to="/login">About</Link></li>
-        <li><Link to="/login">FAQs</Link></li>
+        <li><Link to="/login">Log In</Link></li>
+        <li><Link to="/about">About</Link></li>
+        <li><Link to="/faqs">FAQs</Link></li>
       </ul>
     </header>
   );
